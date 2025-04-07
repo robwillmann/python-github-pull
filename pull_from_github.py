@@ -3,9 +3,9 @@ import requests
 from git import Repo, GitCommandError
 
 # Set constants
-LOCAL_REPO_PATH = "path/to/your/local/repo"  # my local repo path
-REMOTE_URL = "https://github.com/your-username/your-repo.git"  # GitHub remote repo
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/..."  # Discord webhook URL so I can verify if process works
+LOCAL_REPO_PATH = "R:/tester/subfolder"  # my local repo path
+REMOTE_URL = "https://github.com/robwillmann/python-github-pull.git"  # GitHub remote repo
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1358699156029571144/pmvpRHKy8Ny5Wo08tRw-dIOLbNAHCo9gaHqDbYA_VwumbrfECSmA2R-o-n9ZSZSkE8V7"  # Discord webhook URL so I can verify if process works
 
 def get_timestamp():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
