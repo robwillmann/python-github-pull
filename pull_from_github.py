@@ -13,7 +13,7 @@ def get_timestamp():
 def send_discord_message(message: str):
     timestamp = get_timestamp()
     data = {
-        "content": f"{message}\n\n🕒 `{timestamp}`"
+        "content": f"{message}\n🕒 `{timestamp}`"
     }
     try:
         response = requests.post(DISCORD_WEBHOOK_URL, json=data)
